@@ -25,5 +25,4 @@ O objetivo é explorar o controle de layout bidimensional oferecido pelo Grid, g
 
 ## 📂 Como Executar o Projeto
 
-1. Repositório:
-  [./tabelaComCssGrid)
+📂 [Acessar arquivos desta atividade](./Tabela_Com_CSS_Grid)
