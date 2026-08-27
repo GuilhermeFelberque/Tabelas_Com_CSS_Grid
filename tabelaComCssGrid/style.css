@@ -1,0 +1,145 @@
+/* Configurações Gerais */
+body {
+    background-color: #e0e0e0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.page-title {
+    text-align: center;
+    padding: 15px 0;
+    margin: 0;
+}
+
+/* Container principal da página (organiza os 6 exercícios) */
+.grid-page {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Caixa geral de cada exercício */
+.exercise-box {
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    box-sizing: border-box;
+    width: 260px;
+}
+
+.exercise-box h3 {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 8px;
+    font-size: 0.95rem;
+}
+
+/* Imagens preenchendo exatamente a área das células */
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Tamanho uniforme das Grids e Tabelas */
+.grid-container {
+    width: 240px;
+    height: 220px;
+    display: grid;
+}
+
+.grid-container div {
+    border: 1px solid #fff;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+/* -------------------------------------------------------------------------- */
+/* EXERCÍCIO 1: Tabela Simples (Quadro 1 - Canto Sup. Esquerdo) */
+.table-container table {
+    width: 240px;
+    height: 220px;
+    border-collapse: collapse;
+}
+
+.table-container table td {
+    border: 1px solid #fff;
+    width: 33.33%;
+    height: 33.33%;
+    padding: 0;
+}
+
+/* -------------------------------------------------------------------------- */
+/* EXERCÍCIO 2: Quadro 2 (Canto Sup. Meio - Item 1 ocupa 2 linhas e Item 7 estendido) */
+.grid-ex-2 .grid-container {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.grid-ex-2 .item1 {
+    grid-row: span 2;
+}
+
+.grid-ex-2 .item7 {
+    grid-column: span 2;
+}
+
+/* -------------------------------------------------------------------------- */
+/* EXERCÍCIO 3: Quadro 3 (Canto Sup. Direito - Header + 3 Colunas) */
+.grid-ex-3 .grid-container {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 2fr;
+}
+
+.grid-ex-3 .item1 {
+    grid-column: span 3;
+}
+
+/* Ajuste para o número 1 do Exercício 3 não cortar */
+.grid-ex-3 .item1 img {
+    object-fit: contain;
+    background-color: #000;
+}
+
+/* -------------------------------------------------------------------------- */
+/* EXERCÍCIO 4: Quadro 4 (Canto Inf. Esquerdo - Item 8 ocupa 2 colunas) */
+.grid-ex-4 .grid-container {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.grid-ex-4 .item8 {
+    grid-column: span 2;
+}
+
+/* -------------------------------------------------------------------------- */
+/* EXERCÍCIO 5: Quadro 5 (Canto Inf. Meio - Coluna Central Alta) */
+.grid-ex-5 .grid-container {
+    grid-template-columns: 1fr 1.2fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.grid-ex-5 .item2 {
+    grid-row: span 3;
+}
+
+/* -------------------------------------------------------------------------- */
+/* EXERCÍCIO 6: Quadro 6 (Canto Inf. Direito - Layout de 4 Blocos) */
+.grid-ex-6 .grid-container {
+    grid-template-columns: 1fr 1.2fr 1.2fr;
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.grid-ex-6 .item2 {
+    grid-row: span 2;
+}
+
+.grid-ex-6 .item3 {
+    grid-row: span 2;
+}
