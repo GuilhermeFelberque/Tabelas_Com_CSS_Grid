@@ -25,6 +25,5 @@ O objetivo é explorar o controle de layout bidimensional oferecido pelo Grid, g
 
 ## 📂 Como Executar o Projeto
 
-1. Clone este repositório:
-   ```bash
-   git clone [https://github.com/seu-usuario/seu-repositorio.git](https://github.com/seu-usuario/seu-repositorio.git)
+1. Repositório:
+  [./tabelaComCssGrid)
